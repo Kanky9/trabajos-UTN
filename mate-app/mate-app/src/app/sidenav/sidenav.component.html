@@ -1,0 +1,20 @@
+<div class="sidenav">
+    <div class="logo-container">
+        <button class="logo">  </button>
+
+        <div class="logo text">
+            
+        </div>
+
+        <button class="btn-close"> </button>
+    </div>
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav-item" *nfFor="let data of navData">
+            <a href="" class="sidenav-nav-link" [routerLink]="[data.routeLink]">
+                <i class="sidenav-nav-icon" [class]="data.icon"></i>
+                
+                <span class="sidenav-link-text" *ngIf="collapsed"></span>
+            </a>
+        </li>
+    </ul>
+</div>
