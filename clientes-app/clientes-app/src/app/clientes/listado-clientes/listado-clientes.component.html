@@ -1,0 +1,16 @@
+<h2>
+    Listado de nuevos clientes
+  </h2>
+  <div *ngIf="! clientes.length">No hay clientes por el momento</div>
+  <div>
+    <article *ngFor="let cliente of clientes">
+      <span>{{cliente.nombre}}</span>
+      <span>{{cliente.dni}}</span>
+      <span>{{cliente.direccion}}</span>
+      <span>{{cliente.grupo}}</span> 
+      <span>{{cliente.genero}}</span> <!--Es para agregar una nueva columna que muestre el genero-->
+    
+    <button (click)="eliminarItem()"></button> <!--Agregamos el boton para eliminar-->
+
+    </article>
+  </div>

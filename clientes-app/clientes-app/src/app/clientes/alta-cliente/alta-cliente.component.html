@@ -1,0 +1,30 @@
+<h2 >Alta cliente</h2>
+<p>
+  <span>Nombre y Apellido: </span>
+  <input type="text" [(ngModel)]="cliente.nombre">
+</p>
+
+<p>
+  <span>Dni: </span>
+  <input type="text" [(ngModel)]="cliente.dni">
+</p>
+
+<p>
+  <span>Dirección: </span>
+  <input type="text" [(ngModel)]="cliente.direccion">
+</p>
+
+<p>
+  <span>Genero: </span>
+  <input type="text" [(ngModel)]="cliente.genero">
+</p>
+
+<p>
+  <span>Grupo: </span>
+  <select [(ngModel)]="cliente.grupo">
+    <option *ngFor="let grupo of grupos" value="{{grupo.id}}">{{grupo.nombre}}</option>
+  </select>
+</p>
+<p>
+  <button (click)="this.nuevoCliente()">Guardar</button>
+</p>
