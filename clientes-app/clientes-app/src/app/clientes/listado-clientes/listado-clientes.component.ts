@@ -9,8 +9,13 @@ import { ClientesService } from './../clientes.service';
 })
 export class ListadoClientesComponent implements OnInit {  
   
-  eliminarItem(){
-    throw new Error('Method not implemented'); //agregamos la funcion, no sabemos para que es lo de abajo
+  eliminarItem(cliente : Cliente) {
+    const borrar = this.clientes.indexOf(cliente); 
+    if (borrar !== -1) {
+      this.clientes.splice(borrar, 1);
+    }
+
+    /*throw new Error('Method not implemented'); //agregamos la funcion, no sabemos para que es lo de abajo*/
   }
   
   clientes!: Cliente[];
