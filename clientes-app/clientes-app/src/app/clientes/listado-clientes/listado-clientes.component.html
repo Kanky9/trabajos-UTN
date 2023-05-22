@@ -1,21 +1,25 @@
+<section class="container">
 
-<section class="listado__container">
-  <h2 class="listado__h2">
-    Listado de nuevos clientes
-  </h2>
+<h2 class="listado__h2">
+  Listado de nuevos clientes
+</h2>
+  
+    <div class="search__container">
+      <input [(ngModel)]="buscador" class="search__input" type="text" placeholder="Buscar cliente">
+      <button class="search__button"  (click)="buscarItems()"> Buscar </button>
+    </div>
 
-  <div class="listado__menu">
+    <div class="listado__menu">
       <p class="parrafo "> Nombre </p>
       <p class="parrafo "> DNI </p>
       <p class="parrafo "> Dirección </p>
       <p class="parrafo "> Género </p>
       <p class="parrafo "> Grupo </p>
       <p class="parrafo "> Acción </p>
-  </div>
-</section>
+    </div>
 
-  <div *ngIf="! clientes.length">No hay clientes por el momento</div>
-  <div>
+    <div *ngIf="! clientes.length">No hay clientes por el momento</div>
+
     <article class="lista__container" *ngFor="let cliente of clientes">
       <span class="lista__container--final">{{cliente.nombre}}</span>
       <span class="lista__container--final">{{cliente.dni}}</span>
@@ -23,8 +27,7 @@
       <span class="lista__container--final">{{cliente.genero}}</span><!--Es para agregar una nueva columna que muestre el genero-->
       <span class="lista__container--final">{{cliente.grupo}}</span> 
        
-    
     <button class="boton__eliminar" (click)="eliminarItem(cliente)"> Eliminar </button> <!--Agregamos el boton para eliminar-->
 
     </article>
-  </div>
+</section>

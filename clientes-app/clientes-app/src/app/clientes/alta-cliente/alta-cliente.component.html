@@ -1,32 +1,39 @@
-<nav class="title__cliente">
-  <h1 class="title__cliente--h1">Alta cliente</h1>
-</nav>
-<p>
-  <span>Nombre y Apellido: </span>
-  <input type="text" [(ngModel)]="cliente.nombre">
-</p>
-
-<p>
-  <span>Dni: </span>
-  <input type="text" [(ngModel)]="cliente.dni">
-</p>
-
-<p>
-  <span>Dirección: </span>
-  <input type="text" [(ngModel)]="cliente.direccion">
-</p>
-
-<p>
-  <span>Genero: </span>
-  <input type="text" [(ngModel)]="cliente.genero">
-</p>
-
-<p>
-  <span>Grupo: </span>
-  <select [(ngModel)]="cliente.grupo">
-    <option *ngFor="let grupo of grupos" value="{{grupo.id}}">{{grupo.nombre}}</option>
-  </select>
-</p>
-<p>
-  <button (click)="this.nuevoCliente()">Guardar</button>
-</p>
+<section class="container">
+  <div class="altaCliente__container">
+  
+    <span class="form__title">Alta cliente</span>
+  
+    <nav class="form">
+  
+      <div class="form__group">
+        <input required placeholder="Nombre y Apellido" class="form__input" type="text" [(ngModel)]="cliente.nombre">
+        <span class="form__bar"></span>
+      </div>
+  
+      <div class="form__group">
+        <input required placeholder="DNI" class="form__input" type="text" [(ngModel)]="cliente.dni">
+        <span class="form__bar"></span>
+      </div>
+  
+      <div class="form__group">
+        <input required placeholder="Dirección" class="form__input" type="text" [(ngModel)]="cliente.direccion">
+        <span class="form__bar"></span>
+      </div>
+  
+      <div class="form__group">
+        <input required placeholder="Género" class="form__input" type="text" [(ngModel)]="cliente.genero">
+        <span class="form__bar"></span>
+      </div>
+  
+      <br/>
+      <div class="form__group">
+        <span class="grupos__title">Grupos:</span>
+        <select class="select__grupos" [(ngModel)]="cliente.grupo">
+          <option class="option__grupos" *ngFor="let grupo of grupos" value="{{grupo.id}}">{{grupo.nombre}}</option>
+        </select>
+      </div>
+  
+      <button class="form__button" (click)="this.nuevoCliente()">Guardar</button>
+    </nav>
+  </div>
+</section>

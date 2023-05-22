@@ -47,8 +47,8 @@ export class ClientesService {
       nombre: '',
       dni: '',
       direccion: '',
-      grupo: 0,
-      genero:'' //Agregamos genero para que nos muestre en la lista de 
+      genero: '',//Agregamos genero para que nos muestre en la lista de
+      grupo: 0
     };
   }
 }

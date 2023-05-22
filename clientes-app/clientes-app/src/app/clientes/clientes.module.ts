@@ -9,7 +9,7 @@ import { ListadoClientesComponent } from './listado-clientes/listado-clientes.co
 @NgModule({
   declarations: [
     AltaClienteComponent,
-    ListadoClientesComponent
+    ListadoClientesComponent,
   ],
 
   imports: [
