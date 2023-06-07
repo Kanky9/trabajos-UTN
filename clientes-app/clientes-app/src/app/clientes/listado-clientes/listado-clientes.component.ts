@@ -10,7 +10,7 @@ import { ClientesService } from './../clientes.service';
 export class ListadoClientesComponent implements OnInit {  
   clientes!: Cliente[];
   grupos: Grupo[] = [];
-  buscador: String="";
+  buscador: String = "";
 
   eliminarItem(cliente : Cliente) {/**
    * 
