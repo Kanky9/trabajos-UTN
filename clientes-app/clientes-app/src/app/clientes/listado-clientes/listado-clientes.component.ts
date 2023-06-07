@@ -35,7 +35,7 @@ export class ListadoClientesComponent implements OnInit {
   
   constructor(private clientesService: ClientesService) {
 
-    /* agregar un cliente para que ya quede definido*/
+    /* agregar un cliente para que ya quede definido
       this.clientesService.agregarCliente({
       id: 1,
       nombre: 'francesco gaido',
@@ -44,14 +44,12 @@ export class ListadoClientesComponent implements OnInit {
       grupo: 1,
       genero:'masculino'
 
-    })
+    })*/
   
       
    }
   /*Esto es una inyeccion de dependencias*/
   
-  
-
   ngOnInit() {
     this.clientes = this.clientesService.getClientes();
   }
