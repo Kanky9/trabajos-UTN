@@ -1,0 +1,38 @@
+*{
+    text-decoration: none;
+}
+
+.container{
+    height: 90px;
+    
+    padding: 0;
+    margin: 0;
+    
+}
+
+.menu__container{
+    height: 90px;
+    background: #303030;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    z-index: 1;
+}
+
+.menu__nav{
+    
+    grid-column:end 1/13;
+    text-align: center;
+    padding-top: 15%;
+    padding-right: 15px;
+    
+}
+
+.link{
+    color: #f3f3f3;
+    padding: 10px;
+    border: 2px solid ;
+    border-radius: 25px;
+    margin: 11px;
+}
