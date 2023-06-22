@@ -24,7 +24,7 @@
     
     grid-column:end 1/13;
     text-align: center;
-    padding-top: 15%;
+    padding-top: 8.5%;
     padding-right: 15px;
     
 }
@@ -32,7 +32,12 @@
 .link{
     color: #f3f3f3;
     padding: 10px;
-    border: 2px solid ;
+    border: 2px solid #f3f3f3;
     border-radius: 25px;
-    margin: 11px;
+    margin: 10px;
+}
+
+.link:hover{
+    color: #303030;
+    background: #f3f3f3;
 }
