@@ -8,6 +8,7 @@ import { DadosComponent } from './juego-de-dados/dados/dados.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { PiedraPapelTijeraComponent } from './piedra-papel-tijera/piedra-papel-tijera.component';
 import { JuegoComponent } from './piedra-papel-tijera/juego/juego.component';
+import { SnakeGameComponent } from './snake-game/snake-game.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { JuegoComponent } from './piedra-papel-tijera/juego/juego.component';
     DadosComponent,
     InicioComponent,
     PiedraPapelTijeraComponent,
-    JuegoComponent
+    JuegoComponent,
+    SnakeGameComponent
   ],
   imports: [
     BrowserModule,

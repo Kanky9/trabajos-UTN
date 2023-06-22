@@ -10,14 +10,22 @@ export class InicioComponent {
   constructor(private router: Router) {}
 
   /* aca podemos poner la funcion para que cuando hagamos el click en la imagen nos mande directamente al juego */
-  onImageClick() { 
+  imageClickDados() { 
     this.router.navigate(['juegoDeDados']);
+  }
+
+  imageClickPPT() { 
+    this.router.navigate(['piedrapapeltijera']);
+  }
+
+  imageClickSnake() { 
+    this.router.navigate(['snakegame']);
   }
 
 //hacer routing con el numero de tarjeta del juego que es de tipo
 
-AgregarAFavorito(){
+/*AgregarAFavorito(){
   this.router.navigate(['juegoDeDados']) // aca podemos poner la funcion para que cuando hagamos el click nos mande directamente al juego
 
-  }
+  }*/
 }

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { JuegoDeDadosComponent } from './juego-de-dados/juego-de-dados.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { PiedraPapelTijeraComponent } from './piedra-papel-tijera/piedra-papel-tijera.component';
+import { SnakeGameComponent } from './snake-game/snake-game.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,12 @@ const routes: Routes = [
     path: 'piedrapapeltijera',
     component: PiedraPapelTijeraComponent
   },
+
+  {
+    path: 'snakegame',
+    component: SnakeGameComponent
+  },
+
 
   {
     path: '**', // si no da bola va a la principal osea el inicio
