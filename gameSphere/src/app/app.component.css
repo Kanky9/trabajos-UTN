@@ -1,13 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 *{
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
     height: 90px;
-    
     padding: 0;
     margin: 0;
     
+    
+}
+
+.title{
+    color: #f3f3f3;
+    margin-left: 15px;
+    grid-column: 1/13;
+    text-align: start;
+    font-size: 35px;
 }
 
 .menu__container{
@@ -24,7 +35,7 @@
     
     grid-column:end 1/13;
     text-align: center;
-    padding-top: 7%;
+    padding-top: 6%;
     padding-right: 15px;
     
 }

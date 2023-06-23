@@ -23,10 +23,9 @@ const routes: Routes = [
   },
 
   {
-    path: 'snakegame',
+    path: 'snakegame', //Le agregamos el snakegame de path, que nos va a aparecer localhost:4200/snakgame
     component: SnakeGameComponent
   },
-
 
   {
     path: '**', // si no da bola va a la principal osea el inicio

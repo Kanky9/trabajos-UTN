@@ -1,0 +1,21 @@
+
+
+.container{
+    min-height: 900px;
+    height: 100%;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .img__PPT{
+    
+    width: 350px;
+  }
+
+  button {
+    margin-right: 10px;
+  }

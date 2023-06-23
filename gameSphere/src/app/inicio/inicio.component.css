@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
 .container{
     width: 100%;
+    min-height: 900px;
+    height: 100%;
     display: flex;
 }
 
@@ -7,5 +16,5 @@
     cursor: pointer;
     width: 300px;
     margin: 30px;
+    border-radius: 30px;
 }
-
