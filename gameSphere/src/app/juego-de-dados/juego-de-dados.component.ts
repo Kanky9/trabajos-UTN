@@ -18,6 +18,8 @@ export class JuegoDeDadosComponent implements OnInit {
     this.valor3 = this.retornarAleatorio();
 
   }
+
+  /*Math.trunc lo que hace esta función es eliminar la parte decimal*/
   retornarAleatorio() {
     return Math.trunc(Math.random() * 6) + 1;
   }

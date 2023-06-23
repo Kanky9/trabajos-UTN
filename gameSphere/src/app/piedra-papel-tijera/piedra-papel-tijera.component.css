@@ -1,21 +1,22 @@
 
 
 .container{
-    min-height: 900px;
-    height: 100%;
+  min-height: 900px;
+  height: 100%;
 }
 
 .opciones {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
   
-  .img__PPT{
+.img__PPT{
     
-    width: 350px;
-  }
+  width: 350px;
+}
 
-  button {
-    margin-right: 10px;
-  }
+button {
+  margin-right: 10px;
+}
