@@ -11,6 +11,7 @@ enum Opcion {
   templateUrl: './piedra-papel-tijera.component.html',
   styleUrls: ['./piedra-papel-tijera.component.css']
 })
+  
 export class PiedraPapelTijeraComponent {
   opciones: Opcion[] = Object.values(Opcion);
   opcionJugador: Opcion | undefined;
@@ -23,13 +24,13 @@ export class PiedraPapelTijeraComponent {
     this.calcularResultado();
   }
 
-  generarOpcionComputadora(): Opcion {
+  generarOpcionComputadora(): Opcion { //
     const opciones = Object.values(Opcion);
     const indice = Math.floor(Math.random() * opciones.length);
     return opciones[indice];
   }
 
-  calcularResultado(): void {
+  calcularResultado(): void { //Esta funcion sirve para evaluar el las opciones del jugador y de la computadora 
     if (this.opcionJugador === this.opcionComputadora) {
       this.resultado = 'Empate';
     } else if (

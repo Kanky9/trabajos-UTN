@@ -18,7 +18,7 @@ export class SnakeGameComponent {
   lastRenderTime = 0
   gameOver = false
 
-  ngAfterViewInit() {
+  ngAfterViewInit() { //Agregar boton en el html
     this.gameBoard = document.querySelector('.game-board');
     window.requestAnimationFrame(this.start.bind(this));
   }
@@ -29,7 +29,6 @@ export class SnakeGameComponent {
   dpadMovement(direction: string) {
     this.snake.input.setDirection(direction);
   }
-
 
   start(currentTime: any) {
     if (this.gameOver) {

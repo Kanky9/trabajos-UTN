@@ -1,34 +1,38 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { JuegoDeDadosComponent } from './juego-de-dados/juego-de-dados.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { JuegoDeDadosComponent } from './juego-de-dados/juego-de-dados.component';
 import { PiedraPapelTijeraComponent } from './piedra-papel-tijera/piedra-papel-tijera.component';
 import { SnakeGameComponent } from './snake-game/snake-game.component';
 
-const routes: Routes = [
+const routes: Routes = [ //Nos permite navegar entre distintas vistas de nuestra aplicacion.
   {
-    path: 'inicio',
-    component: InicioComponent
+    path: 'inicio', // Nos lleva a la vista principal de la pagina.
+    component: InicioComponent //Llamamos al componente, de este modo nos permite enlazar las propiedaes y funciones cuando presionemos la vista nueva, o ingresamos en el path del browser. 
+
+    //NOS APARACE: localhost:4200/inicio
   },
 
   {
-  path: 'juegoDeDados', //Sirve para colocarle el nombre en el browser cada vez que cambiemos de vista (vista me refiero cuando apretamos el click y nos aparece otra cosa en la pagina).
-  component: JuegoDeDadosComponent //Sirve para enlazar el componente que contiene las propiedades y funciones cuando presionemos la vista nueva
+  path: 'juegoDeDados', //Nos muestra el juego de dados.
+    component: JuegoDeDadosComponent 
+    //NOS APARACE: localhost:4200/juegodedados
   },
 
   {
-    path: 'piedrapapeltijera',
+    path: 'piedrapapeltijera', //Nos muestra el juego de piedra, papel y tijera.
     component: PiedraPapelTijeraComponent
+    //NOS APARACE: localhost:4200/piedrapapeltijera
   },
 
   {
-    path: 'snakegame', //Le agregamos el snakegame de path, que nos va a aparecer localhost:4200/snakgame
+    path: 'snakegame', //Nos va a mostrar el juego de snakegame.
     component: SnakeGameComponent
+    //NOS APARACE: localhost:4200/snakegame
   },
 
   {
-    path: '**', // si no da bola va a la principal osea el inicio
+    path: '**', // Si no tenemos nada, nos retorna a la pagina de inicio. 
     component: InicioComponent
   },
 

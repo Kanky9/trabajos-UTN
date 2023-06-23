@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'gameSphere';
+  title = 'gameSphere'; //Agregamos el titulo de la pagina 
 }

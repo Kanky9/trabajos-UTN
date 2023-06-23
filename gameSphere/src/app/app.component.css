@@ -62,7 +62,7 @@
     animation: borderAnimation 1s infinite linear;
 }
 
-@keyframes borderAnimation {
+@keyframes borderAnimation { /*Esto es una propiedad, que nos hace la animacion, de los links */
   0% {
     border: 2px solid #1086e8;
     box-shadow: 0 0 0 2px #1086e8;;
@@ -85,7 +85,7 @@
   }
 }
 
-@keyframes text-flicker {
+@keyframes text-flicker { /*Esto es una propiedad, anima el titulo*/
   0% {
     opacity:0.1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
@@ -140,7 +140,7 @@
   }
 }
 
-@keyframes border-flicker {
+@keyframes border-flicker { /*Esto es una propiedad, anima el titulo*/
   0% {
     opacity:0.1;
     -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
@@ -180,7 +180,7 @@ box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
   }
 }
 
-@keyframes letter-flicker {
+@keyframes letter-flicker { /*Esto es una propiedad, anima las letras de titulo*/
   0% {
     opacity:0.1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
@@ -193,8 +193,6 @@ box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
     opacity:1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
   }
-  
-  
   19% {
     opacity:1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);

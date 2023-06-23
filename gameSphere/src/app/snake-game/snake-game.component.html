@@ -14,9 +14,9 @@
                 <h3>{{food.currentScore}}</h3>
             </div>
 
-            <div class="start-button">
+            <div class="start-button" (click)="start">
                 START
-            </div>
+            </div> <!--Hay que rutear bien el start-->
         </div>
 
         <div class="game-over" *ngIf="gameOver">
