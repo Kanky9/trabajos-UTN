@@ -1,38 +1,15 @@
-<div class="container">
-    <p></p>
-    <p></p>
-    <h1 class="title">Juego SNAKE</h1>
-    <p></p>
-    <p></p>
+<section class="container">
 
-
-    <div class="container2">
- 
-        <div class="score-card">
-            <div class="score-board">
-                <h1>Score</h1>
-                <h3>{{food.currentScore}}</h3>
-            </div>
-
-            <div class="start-button" (click)="start">
-                START
-            </div> <!--Hay que rutear bien el start-->
+    <div class="game-container">
+        <div class="score">Score: {{ score }}</div>
+        <div class="high-score">High Score: {{ highScore }}</div>
+        <div class="canvas" [style.width.px]="canvasWidth" [style.height.px]="canvasHeight">
+            <div class="snake" *ngFor="let part of snake" [style.left.px]="part.x * squareSize"
+                [style.top.px]="part.y * squareSize"></div>
+            <div class="food" [style.left.px]="food.x * squareSize" [style.top.px]="food.y * squareSize"></div>
+            <div class="game-over" *ngIf="gameOver">Game Over</div>
         </div>
-
-        <div class="game-over" *ngIf="gameOver">
-            <h1>Game Over</h1>
-        </div>
-
-        <div class="game-board">
-        </div>
-        <div class="mobile-controls">
-            <h2>Pad para el teléfono</h2>
-            <nav class="o-pad">
-                <a class="up" (click)="dpadMovement('ArrowUp')"></a>
-                <a class="right" (click)="dpadMovement('ArrowRight')"></a>
-                <a class="down" (click)="dpadMovement('ArrowDown')"></a>
-                <a class="left" (click)="dpadMovement('ArrowLeft')"></a>
-            </nav>
-        </div>
+        <button (click)="startGameWithButton()">Start Game</button>
     </div>
-</div>
+
+</section>
