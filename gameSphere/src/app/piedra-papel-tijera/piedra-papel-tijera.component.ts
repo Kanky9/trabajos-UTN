@@ -14,7 +14,7 @@ enum Opcion {
   
 export class PiedraPapelTijeraComponent {
   opciones: Opcion[] = Object.values(Opcion);
-  opcionJugador: Opcion | undefined;
+  opcionJugador: Opcion | undefined; //Podria probar poniendo el signo ! .Para que tenga la misma funcion que undefined. que significa que no tiene valor asignado 
   opcionComputadora: Opcion | undefined;
   resultado: string | undefined;
 
@@ -29,8 +29,9 @@ export class PiedraPapelTijeraComponent {
     const indice = Math.floor(Math.random() * opciones.length);
     return opciones[indice];
   }
-
-  calcularResultado(): void { //Esta funcion sirve para evaluar el las opciones del jugador y de la computadora 
+  
+  //Esta funcion sirve para evaluar el las opciones del jugador y de la computadora
+  calcularResultado(): void {  
     if (this.opcionJugador === this.opcionComputadora) {
       this.resultado = 'Empate';
     } else if (
