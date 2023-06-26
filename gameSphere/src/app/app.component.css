@@ -59,7 +59,7 @@
     border-radius: 25px;
     margin: 10px;
     font-weight: 600;
-    animation: borderAnimation 1s infinite linear;
+    animation: borderAnimation 2s infinite linear;
 }
 
 @keyframes borderAnimation { /*Esto es una propiedad, que nos hace la animacion, de los links */
